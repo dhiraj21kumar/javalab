@@ -10,3 +10,7 @@ The output can se seen in the console.
 
 For the first program of part B i.e., employee program, before running go to RUN CONFIGURATIONS->ARGUMENTS->PROGRAM ARGUMENTS 
 & give only the employee id mentioned in the program and the apply and run.
+
+Program number 11 in lab manual that is video rental store program is present in my repo in the *movie* folder.
+
+Program number 12 in lab manual that is the employee details using JDBC is present in my repo in the *employeeData* folder. 
