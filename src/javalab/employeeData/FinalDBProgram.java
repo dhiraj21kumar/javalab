@@ -1,3 +1,5 @@
+//Part B Given the information about employees of an organization, develop a small java application, using JDBC.
+
 package employeeData;
 
 import java.util.*;
@@ -13,12 +15,12 @@ public class FinalDBProgram {
 			System.out.println("Enter your choice");
 			int n=in.nextInt();
 			
-			Employee e=new Employee();
-			DAO d=new DAO();
+			Employee e=new Employee();	//Tracing the employee file
+			DAO d=new DAO();		//Tracing the DAO file.
 			
 			switch(n)
 			{
-			case 1:
+			case 1:						//Adding the new employee from console to db.
 					System.out.println("Enter the Employee Name : ");
 					e.setName(in.next());
 					System.out.println("Enter the Age : ");
@@ -30,21 +32,27 @@ public class FinalDBProgram {
 					d.insertemp(e);
 					System.out.println("Employee added successfully");
 					break;
-			case 2:
+			case 2:						//Enter the name of the employee to delete its details.
 					System.out.println("Enter the employee name : ");
 					String Newname=in.next();
 					d.deleteemp(Newname);
 					System.out.println("Employee deleeted successfully");
 					break;
-			case 3:System.out.println("Enter the Employee name to display its attributes : ");
+					
+			case 3:						//Displaying the details of the particiular user.
+					System.out.println("Enter the Employee name to display its attributes : ");
 					String ename=in.next();
 					System.out.println("Employee details...");
 					d.displayname(ename);		
 					break;
-			case 4:System.out.println("Employee deatils are as follows...");
+					
+			case 4:						//Display all attributes in the employee table.
+					System.out.println("Employee deatils are as follows...");
 					d.displayall();
 					break;
-			case 5:System.exit(0);
+					
+			case 5:						//Exit
+					System.exit(0);
 					break;
 					default:
 						System.out.println("Please Choose Valid option \n");
