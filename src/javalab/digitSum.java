@@ -1,4 +1,4 @@
-#Part A 4. Design and implement a java program to find digit sum two digit number until the digit sum is less than 10.
+//Part A 4. Design and implement a java program to find digit sum two digit number until the digit sum is less than 10.
 
 package javalab;
 
