@@ -1,3 +1,5 @@
+#Part A 5.Design an algorithm which accepts a number (which is non-zero and positive) from the user and then checks if it is a happy number or not.
+
 package javalab;
 
 import java.util.*;
