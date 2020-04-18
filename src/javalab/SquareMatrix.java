@@ -1,3 +1,6 @@
+#Part A 
+# 1.a Design an algorithm to accept a value for ‘n’ and calculate the total number of all possible squares in a square matrix.
+
 package javalab;
 
 import java.util.Scanner;
