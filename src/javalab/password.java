@@ -1,3 +1,5 @@
+#Part A 6.Design an algorithm which accepts a Room Number, Mobile Number and Name of the Customer and generate a 6 Character Unique Password.
+
 package javalab;
 
 import java.util.*;
