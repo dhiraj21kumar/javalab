@@ -1,0 +1,2 @@
+This program is the last program of part B.
+Given the information about employees of an organization, develop a small java application, using JDBC.
