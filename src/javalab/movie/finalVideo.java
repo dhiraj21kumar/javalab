@@ -11,7 +11,7 @@ public class finalVideo {
 		videoProcess mm = new videoProcess();
 		while(true)
 		{
-				System.out.println("VIDEO LIBRARY CENTER");
+				System.out.println("VIDEO LIBRARY CENTER");	//The user is given the following options at 											the final stage.
 				int n;
 				Scanner in = new Scanner(System.in);
 				System.out.println("1.ADD MOVIES");
@@ -19,10 +19,11 @@ public class finalVideo {
 				System.out.println("3.RENT OUT");
 				System.out.println("4.COLLECT BACK ");
 	
-				System.out.println("PLEASE ENTER YOUR OPTION");
+				System.out.println("PLEASE ENTER YOUR OPTION");		//Option from the user is taken here.
 				n = in.nextInt();
 				switch(n)
-				{
+				{						//As per the desired wish of the user the 											switch case comes into picture.
+		
 					case 1:mm.AddMovies();
 					break;
 					case 2:mm.DisplayAll();
