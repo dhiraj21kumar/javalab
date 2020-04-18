@@ -1,3 +1,6 @@
+//Part B 2. Develop a Java program using Synchronized Threads, which demonstrates Producer Consumer concept.
+
+
 package javalab;
 
 import java.util.*;
@@ -18,16 +21,16 @@ public class multithreading implements Runnable{
 	public void run()
 	{
 		System.out.println(Thread.currentThread().getName());
-		if(Thread.currentThread().getName().compareTo("one")==0)
+		if(Thread.currentThread().getName().compareTo("one")==0)  //Comparing the process threads.
 		{
 			for(int i=0;i<10;i++)
 			{
 				sum=sum+a[i];
 				try 
 				{
-					Thread.sleep(1000);
+					Thread.sleep(1000);        //Thread.sleep causes the current thread to suspend execution for a specified period. 
 				} 
-				catch (InterruptedException e) 
+				catch (InterruptedException e)     
 				{
 					e.printStackTrace();
 			}
@@ -116,7 +119,7 @@ public class multithreading implements Runnable{
 			a[x]=x+1;
 		}
 		
-	System.out.println(Thread.currentThread().getName());
+	System.out.println(Thread.currentThread().getName());    //Getting the name of each threads.
 	multithreading ob1=new multithreading("one");
 	multithreading ob2=new multithreading("two");
 	multithreading ob3=new multithreading("three");
@@ -125,7 +128,7 @@ public class multithreading implements Runnable{
 	
 	Date start=new Date();
 	
-	System.out.println("First Thread is Alive? : " +ob1.t.isAlive());
+	System.out.println("First Thread is Alive? : " +ob1.t.isAlive());    //Printing weather the thread is alive or not.
 	System.out.println("Second Thread is Alive? : " +ob2.t.isAlive());
 	System.out.println("Third Thread is Alive? : " +ob3.t.isAlive());
 	System.out.println("Fourth Thread is Alive? : " +ob4.t.isAlive());
