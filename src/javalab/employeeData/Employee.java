@@ -1,8 +1,10 @@
+//Part B Given the information about employees of an organization, develop a small java application, using JDBC.
+
 package employeeData;
 
 public class Employee {
 	
-	String name;
+	String name;			//Taking the details of the new employee from the user.
 	int age;
 	String dept;
 	double sal;
