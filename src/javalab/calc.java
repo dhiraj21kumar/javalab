@@ -1,4 +1,4 @@
-#Part A, 1b Design an algorithm for simple calculator which takes input from the user and also details of what operation must be performed. The user can input only 2 operands
+//Part A, 1b Design an algorithm for simple calculator which takes input from the user and also details of what operation must be performed. The user can input only 2 operands
 
 package javalab;
 
