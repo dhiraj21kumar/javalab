@@ -1,3 +1,5 @@
+//PartB Given the information about employees of an organization, develop a small java application, using JDBC.
+
 package employeeData;
 
 import java.sql.Connection;
@@ -7,11 +9,11 @@ import java.sql.SQLException;
 
 public class DAO {
 	
-	public int insertemp(Employee e)
+	public int insertemp(Employee e)			          //Insert new employee from console to db.
 	{
 		int r=0;
-		Connection conn=new DBConnection().getDBconnection();
-		try 
+		Connection conn=new DBConnection().getDBconnection();	  //Establish the connection with db.
+		try 							  //Check for the connection if not established print the error path.
 		{
 			PreparedStatement pst=conn.prepareStatement("insert into employee values(?,?,?,?)");
 			pst.setString(1, e.getName());
@@ -28,10 +30,10 @@ public class DAO {
 	}
 	
 	
-	public int deleteemp(String emp)
+	public int deleteemp(String emp)				 //Delete any employee information from console.
 	{
 		int s=0;
-		Connection conn=new DBConnection().getDBconnection();
+		Connection conn=new DBConnection().getDBconnection();	 //Connection establisment check.
 		try 
 		{
 			PreparedStatement pst=conn.prepareStatement("delete from employee where name=?");
@@ -45,7 +47,7 @@ public class DAO {
 		return s;
 	}
 	
-	public void displayname(String ename)
+	public void displayname(String ename)				//Display the name of the employee.
 	{
 		Connection conn=new DBConnection().getDBconnection();
 		try 
@@ -65,7 +67,7 @@ public class DAO {
 	
 	}
 	
-	public void displayall()
+	public void displayall()			//Display all the data present in the table employee.
 	{
 		Connection conn=new DBConnection().getDBconnection();
 		try 
