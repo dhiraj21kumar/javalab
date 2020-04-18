@@ -1,3 +1,5 @@
+//Part B 3. Design and Implement GUI for managing Employee Details using concepts of Files.
+
 package javalab;
 
 import java.awt.Color;
@@ -20,7 +22,7 @@ public class gui {
 		frameobj.setSize(500, 500);  //declaring frame size
 		
 		GridLayout g1=new GridLayout(5,2);  // layout of the frame
-		frameobj.setLayout(g1);				//layout is set to the frame created
+		frameobj.setLayout(g1);		    //layout is set to the frame created
 		
 		JPanel p1=new JPanel();  //creating panels
 		JPanel p2=new JPanel();
@@ -48,8 +50,8 @@ public class gui {
 		f3.setPreferredSize(new Dimension(200,30));
 		f4.setPreferredSize(new Dimension(200,30));
 		
-		JButton b1=new JButton("SUBMIT");
-		JButton b2=new JButton("RESET");
+		JButton b1=new JButton("SUBMIT");           //Submit Button
+		JButton b2=new JButton("RESET");            //Reset Button
 		
 		b1.addActionListener(new ActionListener() 
 		{
@@ -58,7 +60,7 @@ public class gui {
 			public void actionPerformed(ActionEvent e) 
 			{
 				
-				File fileobj=new File("/Users/hadoop/eclipse-workspace/javalab/Employee File/file.rtf");
+				File fileobj=new File("/Users/hadoop/eclipse-workspace/javalab/Employee File/file.rtf");  //Give location of the text file.
 				try 
 				{
 					FileWriter fw=new FileWriter(fileobj.getAbsoluteFile(),true);
