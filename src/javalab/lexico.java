@@ -1,4 +1,4 @@
-#Part A 3.Design an algorithm to accept 5 strings from the user and print them in lexicographical order.
+//Part A 3.Design an algorithm to accept 5 strings from the user and print them in lexicographical order.
 
 package javalab;
 
