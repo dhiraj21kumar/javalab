@@ -1,3 +1,5 @@
+//Part B Design and implement a simple inventory central system for a small video rental store using constructors and Object List.
+
 package javalab.movie;
 
 import java.util.*;
