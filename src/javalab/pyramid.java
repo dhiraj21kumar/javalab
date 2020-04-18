@@ -1,4 +1,4 @@
-#Part A 2. Design an algorithm to print a pyramid based on level entered by the user
+//Part A 2. Design an algorithm to print a pyramid based on level entered by the user
 
 package javalab;
 
